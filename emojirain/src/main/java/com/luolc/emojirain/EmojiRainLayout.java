@@ -56,7 +56,7 @@ public class EmojiRainLayout extends PercentFrameLayout {
 
     private int mEmojiPer;
 
-    private long mDuration;
+    private float mDuration;
 
     private int mDropAverageDuration;
 
@@ -87,7 +87,7 @@ public class EmojiRainLayout extends PercentFrameLayout {
         mEmojiPer = per;
     }
 
-    public void setDuration(long duration) {
+    public void setDuration(float duration) {
         mDuration = duration;
     }
 
@@ -168,7 +168,7 @@ public class EmojiRainLayout extends PercentFrameLayout {
                 Animation.RELATIVE_TO_SELF, Randoms.floatAround(0, 5),
                 Animation.RELATIVE_TO_PARENT, 0,
                 Animation.ABSOLUTE, mWindowHeight);
-        translateAnimation.setDuration((long)
+        translateAnimation.setDuration((int)
                 (mDropAverageDuration * Randoms.floatAround(1, RELATIVE_DROP_DURATION_OFFSET)));
         translateAnimation.setAnimationListener(new Animation.AnimationListener() {
             @Override
