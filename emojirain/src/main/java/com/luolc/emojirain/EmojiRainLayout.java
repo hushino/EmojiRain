@@ -42,7 +42,7 @@ public class EmojiRainLayout extends PercentFrameLayout {
 
     private static final float RELATIVE_DROP_DURATION_OFFSET = 0.25F;
 
-    private static final int DEFAULT_PER = 6;
+    private static final int DEFAULT_PER = 7;
 
     private static final int DEFAULT_DURATION = 8000;
 
