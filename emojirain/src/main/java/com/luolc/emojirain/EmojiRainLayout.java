@@ -44,7 +44,7 @@ public class EmojiRainLayout extends PercentFrameLayout {
 
     private static final int DEFAULT_PER = 6;
 
-    private static final float DEFAULT_DURATION = 99999999999999L;
+    private static final int DEFAULT_DURATION = 8000;
 
     private static final int DEFAULT_DROP_DURATION = 2400;
 
@@ -153,7 +153,7 @@ public class EmojiRainLayout extends PercentFrameLayout {
         mSubscriptions = new CompositeSubscription();
         mEmojis = new ArrayList<>();
         mEmojiPer = ta.getInteger(R.styleable.EmojiRainLayout_per, DEFAULT_PER);
-        mDuration = ta.getInteger(R.styleable.EmojiRainLayout_duration, (int) DEFAULT_DURATION);
+        mDuration = ta.getInteger(R.styleable.EmojiRainLayout_duration, DEFAULT_DURATION);
         mDropAverageDuration = ta.getInteger(R.styleable.EmojiRainLayout_dropDuration,
                 DEFAULT_DROP_DURATION);
         mDropFrequency = ta.getInteger(R.styleable.EmojiRainLayout_dropFrequency,
